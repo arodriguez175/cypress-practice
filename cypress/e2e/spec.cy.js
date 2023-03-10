@@ -15,5 +15,9 @@ describe("My First Test", () => {
 
     // Verify that the value was updated
     cy.get(".action-email").should("have.value", "fake@email.com");
+
+    // Outside this example, get an element by a data-* property
+    // to isolate from changes.
+    // See: https://docs.cypress.io/guides/references/best-practices#Selecting-Elements
   });
 });
